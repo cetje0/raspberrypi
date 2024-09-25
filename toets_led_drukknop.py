@@ -31,4 +31,5 @@ while True: # loop opstellen
         varLED_voetganger_rood.on() # varLED_voetganger_rood hoog
     
 
+
         
