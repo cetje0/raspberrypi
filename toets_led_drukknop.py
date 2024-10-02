@@ -13,7 +13,7 @@ while True: # loop opstellen
         sleep(10)
 
     if (knop.value %2 == 1): # als de module van de waarde gelijk is aan 1
-        varLED_auto_groen.off() # varLED_auto_groen laag.
+        varLED_auto_groen.off() # varLED_auto_groen laag.uyè
         varLED_auto_oranje.on() # varLED_auto_oranje hoog
         varLED_voetganger_rood.on() # varLED_voetganger_rood hoog
         sleep(2) # wacht 10 seconde
