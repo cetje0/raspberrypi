@@ -1,0 +1,10 @@
+gemiddelde temp is: 24.0
+gemiddelde temp is: 24.0
+gemiddelde temp is: 24.0
+gemiddelde temp is: 24.0
+gemiddelde temp is: 25.5
+temperatuurverschil is te hoog, check de sensor.gemiddelde temp is: 25.5
+gemiddelde temp is: 25.0
+gemiddelde temp is: 25.0
+gemiddelde temp is: 25.0
+gemiddelde temp is: 25.0
