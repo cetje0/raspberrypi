@@ -9,6 +9,7 @@ print(varX)
 varY = time.time()
 print(varY)
 
+
 # naam van tijdzone
 varZ = time.tzname
 print(varZ)
