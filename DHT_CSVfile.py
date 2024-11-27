@@ -14,4 +14,6 @@ with open("eggs.csv", "a") as csvfile:
         except RuntimeError as error:
             print(error.args[0])
             continue
-        csvfile.write("{0}, {1}, {2}\n".format(strftime("%Y-%m-%d %H:%M:%s"), temp_dht11_1, temp_dht11_2))
+        gemiddelde = (temp_dht11_1 + temp_dht11_2) //2
+        print(gemiddelde)
+        csvfile.write("{0}, {1}, {2}, {3}\n".format(strftime("%Y-%m-%d %H:%M:%s"), temp_dht11_1,  temp_dht11_2,  gemiddelde))
