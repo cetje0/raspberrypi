@@ -36,7 +36,7 @@ while True:
         led2_rood.blink(on_time=0.500, off_time=0.500, n = None, background = True)
 
     elif gemiddelde <= 20:
-        led2_rood.off()
+        led2_rood.off() 
 
         led1_groen.blink(on_time=0.500, off_time=0.500, n = None, background = True)
         led2_groen.blink(on_time=0.500, off_time=0.500, n = None, background = True)
