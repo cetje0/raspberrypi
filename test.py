@@ -1,9 +1,9 @@
 import gpiozero as io
-import time as t
+from time import sleep
 
-sensor1 = io.DistanceSensor(echo = 18,  trigger = 17) # 18 = echo   17 = trig
+led = io.PWMLED(2)
 
-while True:
-    print(f"afstand van sensor 1 :{sensor1.distance * 100}")
-    t.sleep(2)
-
+for b in range(101):
+    led.value = b/100.0
+    print(led.value)
+    sleep(0.01)

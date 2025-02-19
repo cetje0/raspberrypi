@@ -24,7 +24,7 @@ RGB_waardes = [[255,0,0],
                [0,0,255]]
 
 DHT11_pin = adafruit_dht.DHT11(board.D18)
-rgb_led = RGBLED(5,6,13)
+rgb_led = RGBLED(5,6,13)                   
 
 while True:
     try:
