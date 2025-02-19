@@ -16,7 +16,11 @@ while True:
                 temperature_c, humidity
             )
         )
-
+        pwm_temp = 6.67 * temperature_c - 100
+        pwm_hum = 2.22 * humidity - 55.56
+        pwm_motor = (max(pwm_temp, pwm_hum))
+    
+        time.sleep(2.0)
     except RuntimeError as error:
         # Errors happen fairly often, DHT's are hard to read, just keep going
         print(error.args[0])
@@ -25,8 +29,4 @@ while True:
     except Exception as error:
         dhtDevice.exit()
         raise error
-    pwm_temp = 6.67 * temperature_c - 100
-    pwm_hum = 2.22 * humidity - 55.56
-    pwm_motor = (max(pwm_temp, pwm_hum))
     
-    time.sleep(2.0)
