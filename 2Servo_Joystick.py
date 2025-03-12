@@ -1,4 +1,3 @@
-from re import X
 from gpiozero import AngularServo, MCP3008
 from time import sleep
 servo_x = AngularServo(17, min_angle = 0, max_angle=180)
